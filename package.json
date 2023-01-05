@@ -18,8 +18,8 @@
     "LICENSE",
     "readme.md"
   ],
-  "repository": "git@github.com:tameemsafi/typewriterjs.git",
-  "author": "Tameem Safi <tameem@safi.me.uk>",
+  "repository": "git@github.com/Fedinjo/typewriterjs-dataset.git#main",
+  "author": "Federico Peloso <federico.peloso03@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build:prod": "webpack --config ./webpack/production.config.babel.js",
