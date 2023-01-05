@@ -1,6 +1,6 @@
 type Speed = "natural" | number
 
-declare module "typewriter-effect-dtattrs" {
+declare module "typewriter-effect-csattrs" {
   export interface Options {
     /**
      * Strings to type out when using autoStart option
