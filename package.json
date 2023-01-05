@@ -1,11 +1,12 @@
 {
-  "name": "typewriter-effect",
-  "version": "2.19.0",
+  "name": "typewriter-effect-csattrs",
+  "version": "2.19.1",
   "main": "dist/react.js",
   "types": "index.d.ts",
   "keywords": [
     "typewriter",
     "typewriter effect",
+    "typewriter effect with custom attributes",
     "es6",
     "react",
     "react typewriter",

@@ -1,6 +1,6 @@
 type Speed = "natural" | number
 
-declare module "typewriter-effect" {
+declare module "typewriter-effect-dtattrs" {
   export interface Options {
     /**
      * Strings to type out when using autoStart option
@@ -183,6 +183,7 @@ declare module "typewriter-effect" {
     component?: React.ElementType
     onInit?: (typewriter: TypewriterClass) => void
     options?: Partial<Options>
+    dataAttrs?: string[]
   }>
 
   export default TypewriterComponent
