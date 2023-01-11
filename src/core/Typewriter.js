@@ -42,6 +42,7 @@ class Typewriter {
     skipAddStyles: false,
     wrapperClassName: 'Typewriter__wrapper',
     cursorClassName: 'Typewriter__cursor',
+    wrapperAttrs: [],
     stringSplitter: null,
     onCreateTextNode: null,
     onRemoveNode: null,
@@ -103,6 +104,19 @@ class Typewriter {
 
     this.state.elements.wrapper.className = this.options.wrapperClassName;
     this.state.elements.cursor.className = this.options.cursorClassName;
+
+    this.options.wrapperAttrs.forEach(attr => {
+
+      const attrParts = attr.match(/^(.*)\=["'](.*)["']$/) || attr
+      console.log(attrParts[1], attrParts[2])
+
+      if (Array.isArray(attrParts)) {
+        this.state.elements.wrapper.setAttribute(attrParts[1], attrParts[2])
+      } else {
+        this.state.elements.wrapper.setAttribute(attrParts, true)
+      }
+
+    })
 
     this.state.elements.cursor.innerHTML = this.options.cursor;
     this.state.elements.container.innerHTML = '';

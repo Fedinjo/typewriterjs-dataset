@@ -62,6 +62,7 @@ Typewriter.propTypes = {
     devMode: PropTypes.bool,
     wrapperClassName: PropTypes.string,
     cursorClassName: PropTypes.string,
+    wrapperAttrs: PropTypes.arrayOf(PropTypes.string)
   })),
 };
 

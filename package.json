@@ -1,6 +1,6 @@
 {
-  "name": "typewriter-effect-csattrs",
-  "version": "2.19.1",
+  "name": "typewriter-effect-dtattrs",
+  "version": "2.19.2",
   "main": "dist/react.js",
   "types": "index.d.ts",
   "keywords": [
@@ -18,7 +18,10 @@
     "LICENSE",
     "readme.md"
   ],
-  "repository": "git@github.com/Fedinjo/typewriterjs-dataset.git#main",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Fedinjo/typewriterjs-dataset.git#main"
+  },
   "author": "Federico Peloso <federico.peloso03@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -56,5 +59,13 @@
   "dependencies": {
     "prop-types": "^15.6.2",
     "raf": "^3.4.0"
+  },
+  "description": "[![CircleCI](https://circleci.com/gh/tameemsafi/typewriterjs.svg?style=svg)](https://circleci.com/gh/tameemsafi/typewriterjs)",
+  "bugs": {
+    "url": "https://github.com/Fedinjo/typewriterjs-dataset/issues"
+  },
+  "homepage": "https://github.com/Fedinjo/typewriterjs-dataset/tree/main#readme",
+  "directories": {
+    "example": "examples"
   }
 }

@@ -1,6 +1,6 @@
 type Speed = "natural" | number
 
-declare module "typewriter-effect-csattrs" {
+declare module "typewriter-effect-dtattrs" {
   export interface Options {
     /**
      * Strings to type out when using autoStart option
@@ -63,6 +63,12 @@ declare module "typewriter-effect-csattrs" {
      * @default "Typewriter__cursor"
      */
     cursorClassName?: string
+    /**
+     * Attributes to apply to the span element
+     * 
+     * @default null
+     */
+    wrapperAttrs?: string[]
     /**
      * String splitter function, can be used to split emoji's
      * 
@@ -183,7 +189,6 @@ declare module "typewriter-effect-csattrs" {
     component?: React.ElementType
     onInit?: (typewriter: TypewriterClass) => void
     options?: Partial<Options>
-    dataAttrs?: string[]
   }>
 
   export default TypewriterComponent
